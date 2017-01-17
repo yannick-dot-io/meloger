@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  timeout: 5000
+
+development:
+  <<: *default
+  database: meloger_development
+test:
+  <<: *default
+  database: meloger_test
+production:
+  <<: *default
+  database: meloger_production

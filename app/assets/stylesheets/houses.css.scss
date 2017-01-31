@@ -1,0 +1,21 @@
+section {
+  @include outer-container;
+}
+article {
+  @include row();
+  title {
+    @include span-columns(2);
+    height: 158px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  .basic {
+    @include span-columns(1);
+  }
+  .more {
+    @include span-columns(9);
+  }
+
+}

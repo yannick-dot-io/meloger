@@ -1,12 +1,15 @@
 source "https://rubygems.org"
 
-ruby "2.3.1"
+ruby "2.4.0"
 
-gem "coal_car", "0.2.3"
+gem "bourbon", ">= 5.0.0.beta.7"
+gem "neat"
+gem "coal_car", "0.2.4"
 gem "coffee-rails", "~> 4.1.0"
 gem "jquery-rails"
 gem "librato-rails"
 gem "lograge"
+gem "multi_xml"
 gem "peek"
 gem "peek-faraday"
 gem "peek-performance_bar"

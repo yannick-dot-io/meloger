@@ -1,0 +1,32 @@
+<section id=houses>
+  <% @houses.each do |house| %>
+    <article >
+      <title style="background-image: url(<%= house.thumb %>)"></title>
+      <section class=basic>
+        <dl>
+          <dt>Price</dt>
+          <dd><%= house.price %></dd>
+          <dt>City</dt>
+          <dd><%= house.place %></dd>
+        </dl>
+      </section>
+      <section class=more>
+        <% if house.description.size > 300 %>
+          <details>
+            <summary><%= house.description[0..300] %>...</summary>
+            <p>
+              <%= house.description[301..-1] %>
+            </p>
+          </details>
+        <% else %>
+          <p>
+            <%= house.description %>
+          </p>
+        <% end %>
+      </section>
+      <!--
+      <%= raw(JSON.pretty_generate house.payload) %>
+      -->
+    </article>
+  <% end %>
+</section>

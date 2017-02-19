@@ -1,3 +1,4 @@
+# Regions
 class RegionsController < ApplicationController
   def show
     region = params[:id]

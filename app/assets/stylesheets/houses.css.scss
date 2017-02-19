@@ -2,6 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: -1em 0 0 -1em;
+}
+.card-wrapper {
+  flex: 0 0 33.3333%;
+  // flex-grow: 3;
+  // margin: 0 $card-margin $base-spacing $card-margin;
+  padding: 1em 0 0 1em;
 }
 
 .card {
@@ -26,8 +33,6 @@
   box-shadow: 0 2px 4px darken($base-background-color, 10%);
   cursor: pointer;
   flex-basis: 15em;
-  flex-grow: 3;
-  margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
   transition: all 0.2s ease-in-out;
 

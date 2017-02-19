@@ -1,29 +1,31 @@
 <div class="cards">
   <% @houses.each do |house| %>
-    <div class="card">
-      <div class="card-image">
-        <a href="<%= house.permalink %>">
-          <img src="<%= house.thumb %>">
-        </a>
-      </div>
-      <div class="card-header">
-        <a href="<%= house.permalink %>">
-          <%= house.place %> | <%= house.price %>
-        </a>
-      </div>
-      <div class="card-copy">
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-image">
+          <a href="<%= house.permalink %>">
+            <img src="<%= house.thumb %>">
+          </a>
+        </div>
+        <div class="card-header">
+          <a href="<%= house.permalink %>">
+            <%= house.place %> | <%= house.price %>
+          </a>
+        </div>
+        <div class="card-copy">
           <% if house.description.size > 300 %>
             <details>
               <summary><%= house.description[0..300] %>...</summary>
               <p>
-                <%= house.description[301..-1] %>
+              <%= house.description[301..-1] %>
               </p>
             </details>
           <% else %>
             <p>
-              <%= house.description %>
+            <%= house.description %>
             </p>
           <% end %>
+        </div>
       </div>
     </div>
   <% end %>

@@ -55,18 +55,40 @@
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
     font-weight: bold;
+    font-size: 1.3em;
     line-height: 1.5em;
     padding: ($base-spacing / 3) ($base-spacing / 2);
     transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    span {
+      flex: 0 0 50%;
+    }
   }
 
   .card-copy {
     font-size: 0.9em;
     line-height: 1.5em;
     padding: ($base-spacing / 2) ($base-spacing / 2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    details {
+      margin-top: 15px;
+    }
 
     p {
       margin: 0 0 ($base-spacing / 2);
+    }
+    dl {
+      flex: 0 0 33.3333%;
+      display: inline-block;
+      dt { font-weight: normal; }
+      dd {
+        font-weight: bold;
+        font-size: 1.3em;
+      }
     }
   }
 

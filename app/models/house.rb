@@ -17,7 +17,11 @@ class House
       p = payload["photos"]
       s = p["photo"]
       first = s[0]
-      first["stdUrl"]
+      if first
+        first["stdUrl"]
+      else
+        payload["firstThumb"]
+      end
     else
       payload["firstThumb"]
     end
@@ -33,5 +37,29 @@ class House
 
   def inspect
     super.gsub(/, @payload=\{.*\}/, "")
+  end
+
+  def price_unit
+    payload["prixUnite"]
+  end
+
+  def postal_code
+    payload["cp"]
+  end
+
+  def surface
+    payload.fetch("surface", "0")
+  end
+
+  def surface_unit
+    payload.fetch("surfaceUnite", "m2")
+  end
+
+  def number_of_bedrooms
+    payload.fetch("nbChambre", "Unknown")
+  end
+
+  def number_of_rooms
+    payload.fetch("nbPiece", "Unknown")
   end
 end

@@ -1,0 +1,351 @@
+<annonce>
+	<idTiers>24680</idTiers>
+	<idAnnonce>116802525</idAnnonce>
+	<idAgence>55939</idAgence>
+	<idPublication>277242</idPublication>
+	<idTypeTransaction>2</idTypeTransaction>
+	<idTypeBien>2</idTypeBien>
+	<idSousTypeBien>1</idSousTypeBien>
+	<dtFraicheur>2017-02-18T00:37:00</dtFraicheur>
+	<dtCreation>2017-02-07T00:36:00</dtCreation>
+	<titre>Villa 5 pièces</titre>
+	<libelle>Corps de Ferme</libelle>
+
+	<descriptif>Rare Sainte-Foy-lès-Lyon limite Francheville. Calme dans une impasse agréable Maison ancienne typée Corps de Ferme, surface habitable de 97 m²aujourd&#39;hui avec de belles perspectives envisageables pour un projet d&#39;agrandissement dans le temps si souhaité car dépendance contiguë. Séjour, salle a manger cuisine ouverte 3 chambres, salle de bains, 2 WC, chauffage individuel au gaz récent et cheminée. Terrain 450 m² arboré piscinable, transports, commerces et écoles à proximité. Prix: 480000 e, Réf: 1804db.</descriptif>
+
+
+	<prix>480000</prix>
+
+
+
+	<prixUnite>€ FAI*</prixUnite>
+	<prixMention>* Prix net, hors frais notariés, d'enregistrement et de publicité foncière</prixMention>
+
+
+
+	<nbPiece>5</nbPiece>
+	<nbChambre>3</nbChambre>
+	<surface>100</surface>
+	<surfaceUnite>m²</surfaceUnite>
+	<idPays>250</idPays>
+	<pays>France</pays>
+	<cp>69110</cp>
+	<codeInsee>690202</codeInsee>
+	<ville>Sainte-Foy-Lès-Lyon</ville>
+
+
+
+
+
+		<logoTnyUrl>http://dyn.visuels.poliris.com/logosAgences/tny/9/55939.gif</logoTnyUrl>
+		<logoBigUrl>http://dyn.visuels.poliris.com/logosAgences/big/9/55939.gif</logoBigUrl>
+
+
+	<nbPhotos>15</nbPhotos>
+	<firstThumb>http://v.seloger.com/s/crop/100x100/visuels/0/p/6/1/0p617d3v6uzlla14bq4i3m62nt97k19qhw6s5eugw.jpg</firstThumb>
+
+
+	<permaLien>http://www.seloger.com/annonces/achat/maison/sainte-foy-les-lyon-69/116802525.htm?p=CCCPqG-wA6mAQ6-g</permaLien>
+
+	<latitude>45.738249</latitude>
+	<longitude>4.795815</longitude>
+	<llPrecision>vil</llPrecision>
+	<typeDPE>hab</typeDPE>
+	<consoEnergie>199</consoEnergie>
+	<bilanConsoEnergie>D</bilanConsoEnergie>
+	<emissionGES>46</emissionGES>
+	<bilanEmissionGES>E</bilanEmissionGES>
+	<siLotNeuf>false</siLotNeuf>
+	<siMandatExclusif> false</siMandatExclusif>
+	<siMandatStar> false</siMandatStar>
+	<contact>
+
+
+
+
+
+		<siAudiotel>false</siAudiotel>
+		<idPublication>277242</idPublication>
+		<nom>BIC IMMOBILIER</nom>
+		<rcsSiren>385197488</rcsSiren>
+		<rcsNic>00021</rcsNic>
+
+	</contact>
+	<photos>
+
+			<photo>
+				<titre></titre>
+				<ordre>0</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/0/p/6/1/0p617d3v6uzlla14bq4i3m62nt97k19qhw6s5eugw.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/0/p/6/1/0p617d3v6uzlla14bq4i3m62nt97k19qhw6s5eugw.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/0/p/6/1/0p617d3v6uzlla14bq4i3m62nt97k19qhw6s5eugw.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/0/p/6/1/0p617d3v6uzlla14bq4i3m62nt97k19qhw6s5eugw.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/0/p/6/1/0p617d3v6uzlla14bq4i3m62nt97k19qhw6s5eugw.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>1</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/1/l/f/l/1lflc6q3xeyiukc1u7ofxqox4bqj15a7h02306zsw.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/1/l/f/l/1lflc6q3xeyiukc1u7ofxqox4bqj15a7h02306zsw.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/1/l/f/l/1lflc6q3xeyiukc1u7ofxqox4bqj15a7h02306zsw.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/1/l/f/l/1lflc6q3xeyiukc1u7ofxqox4bqj15a7h02306zsw.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/1/l/f/l/1lflc6q3xeyiukc1u7ofxqox4bqj15a7h02306zsw.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>2</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/0/8/5/s/085sriqhihcxh6glxzkw2f0fnvryonhz1n1sst134.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/0/8/5/s/085sriqhihcxh6glxzkw2f0fnvryonhz1n1sst134.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/0/8/5/s/085sriqhihcxh6glxzkw2f0fnvryonhz1n1sst134.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/0/8/5/s/085sriqhihcxh6glxzkw2f0fnvryonhz1n1sst134.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/0/8/5/s/085sriqhihcxh6glxzkw2f0fnvryonhz1n1sst134.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>3</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/1/z/j/0/1zj0auaaumcflze50s0keo72y7796lo1nw4uss0qo.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/1/z/j/0/1zj0auaaumcflze50s0keo72y7796lo1nw4uss0qo.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/1/z/j/0/1zj0auaaumcflze50s0keo72y7796lo1nw4uss0qo.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/1/z/j/0/1zj0auaaumcflze50s0keo72y7796lo1nw4uss0qo.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/1/z/j/0/1zj0auaaumcflze50s0keo72y7796lo1nw4uss0qo.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>4</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/1/f/i/3/1fi3dixq154qq3rjx5yrnmkbhoawwzvwf7isur6bk.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/1/f/i/3/1fi3dixq154qq3rjx5yrnmkbhoawwzvwf7isur6bk.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/1/f/i/3/1fi3dixq154qq3rjx5yrnmkbhoawwzvwf7isur6bk.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/1/f/i/3/1fi3dixq154qq3rjx5yrnmkbhoawwzvwf7isur6bk.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/1/f/i/3/1fi3dixq154qq3rjx5yrnmkbhoawwzvwf7isur6bk.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>5</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/0/y/b/m/0ybmzr81bbwxpmtzd9mxyzvmt6foqtkh1lssx3a2o.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/0/y/b/m/0ybmzr81bbwxpmtzd9mxyzvmt6foqtkh1lssx3a2o.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/0/y/b/m/0ybmzr81bbwxpmtzd9mxyzvmt6foqtkh1lssx3a2o.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/0/y/b/m/0ybmzr81bbwxpmtzd9mxyzvmt6foqtkh1lssx3a2o.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/0/y/b/m/0ybmzr81bbwxpmtzd9mxyzvmt6foqtkh1lssx3a2o.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>6</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/0/3/z/7/03z7yi8qzj5ujlzk4ez91e11jnp8js7zspfsc6474.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/0/3/z/7/03z7yi8qzj5ujlzk4ez91e11jnp8js7zspfsc6474.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/0/3/z/7/03z7yi8qzj5ujlzk4ez91e11jnp8js7zspfsc6474.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/0/3/z/7/03z7yi8qzj5ujlzk4ez91e11jnp8js7zspfsc6474.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/0/3/z/7/03z7yi8qzj5ujlzk4ez91e11jnp8js7zspfsc6474.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+
+			<photo>
+				<titre></titre>
+				<ordre>7</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/0/t/d/z/0tdzyyp129zwsfg32slqgu9txiroser1nkeq84v5s.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/0/t/d/z/0tdzyyp129zwsfg32slqgu9txiroser1nkeq84v5s.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/0/t/d/z/0tdzyyp129zwsfg32slqgu9txiroser1nkeq84v5s.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/0/t/d/z/0tdzyyp129zwsfg32slqgu9txiroser1nkeq84v5s.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/0/t/d/z/0tdzyyp129zwsfg32slqgu9txiroser1nkeq84v5s.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>8</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/1/9/0/u/190ubvwrpnpqsigbge1r3qs9iy3miqf7cd7fekyps.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/1/9/0/u/190ubvwrpnpqsigbge1r3qs9iy3miqf7cd7fekyps.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/1/9/0/u/190ubvwrpnpqsigbge1r3qs9iy3miqf7cd7fekyps.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/1/9/0/u/190ubvwrpnpqsigbge1r3qs9iy3miqf7cd7fekyps.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/1/9/0/u/190ubvwrpnpqsigbge1r3qs9iy3miqf7cd7fekyps.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>9</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/1/m/n/b/1mnbh010d03mol2l0zhxftp6ulpj540ior7mt6bwg.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/1/m/n/b/1mnbh010d03mol2l0zhxftp6ulpj540ior7mt6bwg.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/1/m/n/b/1mnbh010d03mol2l0zhxftp6ulpj540ior7mt6bwg.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/1/m/n/b/1mnbh010d03mol2l0zhxftp6ulpj540ior7mt6bwg.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/1/m/n/b/1mnbh010d03mol2l0zhxftp6ulpj540ior7mt6bwg.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>10</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/0/l/1/a/0l1aerxn53qajfq291z694tlutrn5v5ct0nl5cmo0.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/0/l/1/a/0l1aerxn53qajfq291z694tlutrn5v5ct0nl5cmo0.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/0/l/1/a/0l1aerxn53qajfq291z694tlutrn5v5ct0nl5cmo0.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/0/l/1/a/0l1aerxn53qajfq291z694tlutrn5v5ct0nl5cmo0.jpg</stdUrl>
+				<c175url></c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>11</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/1/i/c/6/1ic6ox84wzndq2qex26w0yj3v5fek4bix8l16siio.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/1/i/c/6/1ic6ox84wzndq2qex26w0yj3v5fek4bix8l16siio.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/1/i/c/6/1ic6ox84wzndq2qex26w0yj3v5fek4bix8l16siio.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/1/i/c/6/1ic6ox84wzndq2qex26w0yj3v5fek4bix8l16siio.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/1/i/c/6/1ic6ox84wzndq2qex26w0yj3v5fek4bix8l16siio.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>12</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/2/4/u/d/24udjsfe1kftk44eczq5feief2w1rpgooefizjq9s.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/2/4/u/d/24udjsfe1kftk44eczq5feief2w1rpgooefizjq9s.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/2/4/u/d/24udjsfe1kftk44eczq5feief2w1rpgooefizjq9s.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/2/4/u/d/24udjsfe1kftk44eczq5feief2w1rpgooefizjq9s.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/2/4/u/d/24udjsfe1kftk44eczq5feief2w1rpgooefizjq9s.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>13</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/0/e/m/t/0emtmiblrpyj4qc75h183aou7an46abakelvwplts.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/0/e/m/t/0emtmiblrpyj4qc75h183aou7an46abakelvwplts.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/0/e/m/t/0emtmiblrpyj4qc75h183aou7an46abakelvwplts.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/0/e/m/t/0emtmiblrpyj4qc75h183aou7an46abakelvwplts.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/0/e/m/t/0emtmiblrpyj4qc75h183aou7an46abakelvwplts.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+			<photo>
+				<titre></titre>
+				<ordre>14</ordre>
+				<thbUrl>http://v.seloger.com/s/width/100/visuels/1/s/v/9/1sv97i8kf1y6vud4j8g7130lc5d1d8wkl33hceym8.jpg</thbUrl>
+				<carreurl>http://v.seloger.com/s/crop/100x100/visuels/1/s/v/9/1sv97i8kf1y6vud4j8g7130lc5d1d8wkl33hceym8.jpg</carreurl>
+				<bigUrl>http://v.seloger.com/s/width/800/visuels/1/s/v/9/1sv97i8kf1y6vud4j8g7130lc5d1d8wkl33hceym8.jpg</bigUrl>
+				<stdUrl>http://v.seloger.com/s/width/400/visuels/1/s/v/9/1sv97i8kf1y6vud4j8g7130lc5d1d8wkl33hceym8.jpg</stdUrl>
+				<c175url>http://v.seloger.com/s/crop/175x175/visuels/1/s/v/9/1sv97i8kf1y6vud4j8g7130lc5d1d8wkl33hceym8.jpg</c175url>
+				<stdwidth>400</stdwidth>
+				<stdheight>266</stdheight>
+				<thumbwidth>100</thumbwidth>
+				<thumbheight>66</thumbheight>
+				<bigwidth>800</bigwidth>
+				<bigheight>533</bigheight>
+			</photo>
+
+
+
+
+
+
+
+
+
+	</photos>
+	<nbsallesdebain>1</nbsallesdebain>
+	<nbsalleseau>0</nbsalleseau>
+	<nbtoilettes>2</nbtoilettes>
+	<sisejour>False</sisejour>
+	<surfsejour></surfsejour>
+	<anneeconstruct>1870</anneeconstruct>
+	<nbparkings>1</nbparkings>
+	<nbboxes>1</nbboxes>
+	<siterrasse></siterrasse>
+	<nbterrasses></nbterrasses>
+	<sipiscine>False</sipiscine>
+</annonce>

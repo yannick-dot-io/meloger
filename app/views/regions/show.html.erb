@@ -8,11 +8,28 @@
           </a>
         </div>
         <div class="card-header">
-          <a href="<%= house.permalink %>">
-            <%= house.place %> | <%= house.price %>
-          </a>
+          <span>
+            <a href="<%= house.permalink %>">
+              <%= house.place %>
+            </a>
+          </span>
+          <span>
+            <%= house.price + house.price_unit %>
+          </span>
         </div>
         <div class="card-copy">
+          <dl>
+            <dt>Surface</dt>
+            <dd><%= house.surface + house.surface_unit %></dd>
+          </dl>
+          <dl>
+            <dt>Chambres</dt>
+            <dd><%= house.number_of_bedrooms %></dd>
+          </dl>
+          <dl>
+            <dt>Pieces</dt>
+            <dd><%= house.number_of_rooms %></dd>
+          </dl>
           <% if house.description.size > 300 %>
             <details>
               <summary><%= house.description[0..300] %>...</summary>

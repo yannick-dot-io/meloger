@@ -14,6 +14,12 @@ class SeLogerApi
     if opts[:min_price]
       qs[:pxmin] = opts[:min_price]
     end
+
+    qs[:tri] = case opts[:order]
+    when :asc; :a_dt_crea
+    else :d_dt_crea
+    end
+
     resp = client.get("search.xml", qs)
     houses = resp.body["recherche"]["annonces"]["annonce"]
     if resp.body["recherche"]["pageMax"]

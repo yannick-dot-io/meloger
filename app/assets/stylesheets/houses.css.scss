@@ -26,7 +26,7 @@
   box-shadow: 0 2px 4px darken($base-background-color, 10%);
   cursor: pointer;
   flex-basis: 15em;
-  // flex-grow: 1;
+  flex-grow: 3;
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
   transition: all 0.2s ease-in-out;

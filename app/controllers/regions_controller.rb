@@ -11,16 +11,12 @@ class RegionsController < ApplicationController
   end
 
   def index
-    @houses = Rails.cache.fetch("regions-#{default_regions}-houses", expires_in: 10.minutes) do
-      SeLogerApi.search(postal_code: default_regions,
+    @houses = Rails.cache.fetch("regions-#{::Configuration.default_regions}-houses", expires_in: 10.minutes) do
+      SeLogerApi.search(postal_code: ::Configuration.default_regions,
                         max_price: ::Configuration.max_price,
                         min_price: ::Configuration.min_price,
                         terms: ::Configuration.search_terms)
     end
     render :show
-  end
-
-  def default_regions
-    ENV.fetch("REGIONS", "51,21,58,71,89")
   end
 end

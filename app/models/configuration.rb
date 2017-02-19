@@ -11,4 +11,8 @@ module Configuration
     ["dépendance",
      "longère"]
   end
+
+  def self.default_regions
+    ENV.fetch("REGIONS", "51,21,58,71,89")
+  end
 end

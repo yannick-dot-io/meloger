@@ -1,32 +1,30 @@
-<section id=houses>
+<div class="cards">
   <% @houses.each do |house| %>
-    <article >
-      <title style="background-image: url(<%= house.thumb %>)"></title>
-      <section class=basic>
-        <dl>
-          <dt>Price</dt>
-          <dd><%= house.price %></dd>
-          <dt>City</dt>
-          <dd><%= house.place %></dd>
-        </dl>
-      </section>
-      <section class=more>
-        <% if house.description.size > 300 %>
-          <details>
-            <summary><%= house.description[0..300] %>...</summary>
+    <div class="card">
+      <div class="card-image">
+        <a href="<%= house.permalink %>">
+          <img src="<%= house.thumb %>">
+        </a>
+      </div>
+      <div class="card-header">
+        <a href="<%= house.permalink %>">
+          <%= house.place %> | <%= house.price %>
+        </a>
+      </div>
+      <div class="card-copy">
+          <% if house.description.size > 300 %>
+            <details>
+              <summary><%= house.description[0..300] %>...</summary>
+              <p>
+                <%= house.description[301..-1] %>
+              </p>
+            </details>
+          <% else %>
             <p>
-              <%= house.description[301..-1] %>
+              <%= house.description %>
             </p>
-          </details>
-        <% else %>
-          <p>
-            <%= house.description %>
-          </p>
-        <% end %>
-      </section>
-      <!--
-      <%= raw(JSON.pretty_generate house.payload) %>
-      -->
-    </article>
+          <% end %>
+      </div>
+    </div>
   <% end %>
-</section>
+</div>

@@ -6,6 +6,22 @@
 }
 .card-wrapper {
   flex: 0 0 33.3333%;
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    flex: 0 0 100%;
+  }
+
+  /* Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    flex: 0 0 50%;
+  }
   @media screen and (max-width: 800px){
     flex: 0 0 50%;
   }

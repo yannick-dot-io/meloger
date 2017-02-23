@@ -8,8 +8,10 @@ module Configuration
   end
 
   def self.search_terms
-    ["dépendance",
-     "longère"]
+    ENV.fetch("SEARCH_TERMS") do
+      ["dépendance",
+      "longère"]
+    end
   end
 
   def self.default_regions

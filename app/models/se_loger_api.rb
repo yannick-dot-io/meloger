@@ -3,6 +3,10 @@ class SeLogerApi
     new.search(opts)
   end
 
+  def self.get(id)
+    new.get(id)
+  end
+
   def search(opts = {})
     qs = { naturebien: 1 }
     qs[:cp] = opts.fetch(:postal_code)
@@ -35,6 +39,11 @@ class SeLogerApi
     houses.select do |h|
       opts[:terms].any? { |term| h.description.include?(term) }
     end
+  end
+
+  def get(id)
+    resp = client.get("annonceDetail.xml", idAnnonce: id)
+    House.from_se_loger(resp.body["detailAnnonce"])
   end
 
   def client

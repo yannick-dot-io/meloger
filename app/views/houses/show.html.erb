@@ -1,0 +1,42 @@
+<div class="card-wrapper">
+  <div class="card">
+    <div class="card-images">
+      <% @house.pictures.each do |picture| %>
+        <div>
+          <img data-lazy="<%= picture["bigUrl"] %>" />
+        </div>
+      <% end %>
+    </div>
+    <div class="card-header">
+      <span>
+        <%= link_to @house.permalink do %>
+          <%= @house.place %>
+        <% end %>
+      </span>
+      <span>
+        <%= @house.price + @house.price_unit %>
+      </span>
+    </div>
+    <div class="card-copy">
+      <dl>
+        <dt>Code postal</dt>
+        <dd><%= @house.postal_code %></dd>
+      </dl>
+      <dl>
+        <dt>Surface</dt>
+        <dd><%= @house.surface + @house.surface_unit %></dd>
+      </dl>
+      <dl>
+        <dt>Chambres</dt>
+        <dd><%= @house.number_of_bedrooms %></dd>
+      </dl>
+      <dl>
+        <dt>Pieces</dt>
+        <dd><%= @house.number_of_rooms %></dd>
+      </dl>
+      <p>
+      <%= @house.description %>
+      </p>
+    </div>
+  </div>
+</div>

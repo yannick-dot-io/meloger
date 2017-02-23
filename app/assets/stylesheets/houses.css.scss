@@ -58,6 +58,17 @@
   position: relative;
   transition: all 0.2s ease-in-out;
 
+  .card-images {
+    background-color: $card-image-hover-color;
+    width: 70%;
+    margin: 40px auto;
+    img {
+      @include border-top-radius($base-border-radius);
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+    }
+  }
   .card-image {
     background-color: $card-image-hover-color;
     height: 250px;

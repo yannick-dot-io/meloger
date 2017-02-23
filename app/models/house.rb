@@ -27,6 +27,14 @@ class House
     end
   end
 
+  def pictures
+    payload["photos"]["photo"]
+  end
+
+  def id
+    payload["idAnnonce"]
+  end
+
   def place
     payload["ville"]
   end

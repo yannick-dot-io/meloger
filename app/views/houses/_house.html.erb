@@ -1,0 +1,49 @@
+<div class="card-wrapper">
+  <div class="card">
+    <div class="card-image">
+      <%= link_to house_path(id: house.id) do %>
+        <img src="<%= house.thumb %>">
+      <% end %>
+    </div>
+    <div class="card-header">
+      <span>
+        <%= link_to house_path(id: house.id) do %>
+          <%= house.place %>
+        <% end %>
+      </span>
+      <span>
+        <%= house.price + house.price_unit %>
+      </span>
+    </div>
+    <div class="card-copy">
+      <dl>
+        <dt>Code postal</dt>
+        <dd><%= house.postal_code %></dd>
+      </dl>
+      <dl>
+        <dt>Surface</dt>
+        <dd><%= house.surface + house.surface_unit %></dd>
+      </dl>
+      <dl>
+        <dt>Chambres</dt>
+        <dd><%= house.number_of_bedrooms %></dd>
+      </dl>
+      <dl>
+        <dt>Pieces</dt>
+        <dd><%= house.number_of_rooms %></dd>
+      </dl>
+      <% if house.description.size > 300 %>
+        <details>
+          <summary><%= house.description[0..300] %>...</summary>
+          <p>
+          <%= house.description[301..-1] %>
+          </p>
+        </details>
+      <% else %>
+        <p>
+        <%= house.description %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>

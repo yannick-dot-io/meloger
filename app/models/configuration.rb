@@ -9,9 +9,8 @@ module Configuration
 
   def self.search_terms
     ENV.fetch("SEARCH_TERMS") do
-      ["dépendance",
-      "longère"]
-    end
+      "dépendance,longère"
+    end.split(",").map(&:strip)
   end
 
   def self.default_regions

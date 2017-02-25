@@ -17,6 +17,11 @@
 
 //= require_tree .
 $(document).on('turbolinks:load', function() {
-  $(".card-images").slick({lazyLoad: "ondemand", arrows: false, dots: true});
+  $(".card-images").slick({
+    lazyLoad: "progressive",
+    adaptiveHeight: true,
+    arrows: false,
+    dots: true
+  });
 });
 // $(document).on('turbolinks:before-cache', $('.card-images').slick('unslick'))

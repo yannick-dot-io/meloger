@@ -1,13 +1,14 @@
-class House
-  include ActiveModel::Model
-  attr_accessor :permalink,
-    :description, :title, :payload
-
+class House < ApplicationRecord
   def self.from_se_loger(h)
-    new(permalink: h["permaLien"],
-        title: h["titre"],
-        description: h["descriptif"],
-        payload: h)
+    new(
+      external_id: h["idAnnonce"].to_s,
+      postal_code: h["cp"],
+      price:       h["prix"],
+      permalink:   h["permaLien"],
+      title:       h["titre"],
+      description: h["descriptif"],
+      payload:     h
+    )
   end
 
   def thumb
@@ -31,16 +32,8 @@ class House
     payload["photos"]["photo"]
   end
 
-  def id
-    payload["idAnnonce"]
-  end
-
   def place
     payload["ville"]
-  end
-
-  def price
-    payload["prix"]
   end
 
   def inspect
@@ -49,10 +42,6 @@ class House
 
   def price_unit
     payload["prixUnite"]
-  end
-
-  def postal_code
-    payload["cp"]
   end
 
   def surface

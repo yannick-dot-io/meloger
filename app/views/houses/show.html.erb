@@ -14,7 +14,7 @@
         <% end %>
       </span>
       <span>
-        <%= @house.price + @house.price_unit %>
+        <%= @house.price.to_s + @house.price_unit %>
       </span>
     </div>
     <div class="card-copy">

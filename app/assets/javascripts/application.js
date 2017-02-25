@@ -19,4 +19,4 @@
 $(document).on('turbolinks:load', function() {
   $(".card-images").slick({lazyLoad: "ondemand", arrows: false, dots: true});
 });
-$(document).on('turbolinks:before-cache', $('.card-images').slick('unslick'))
+// $(document).on('turbolinks:before-cache', $('.card-images').slick('unslick'))

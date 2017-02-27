@@ -1,6 +1,8 @@
 <% content_for :head do %>
   <link rel="image_src" href="<%= @house.thumb %>"/>
   <meta property="og:image" content="<%= @house.thumb %>"/>
+  <meta property="og:title" content="<%= @house.place + " - " + @house.price.to_s + @house.price_unit %>" />
+  <meta property="og:description" content="<%= @house.description %>"/>
 <% end %>
 
 <div class="card-wrapper">

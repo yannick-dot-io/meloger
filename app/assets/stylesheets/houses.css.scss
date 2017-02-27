@@ -59,7 +59,6 @@
   transition: all 0.2s ease-in-out;
 
   .card-images {
-    background-color: $card-image-hover-color;
     width: 70%;
     margin: 40px auto;
     @media only screen
@@ -92,7 +91,6 @@
     }
   }
   .card-image {
-    background-color: $card-image-hover-color;
     height: 250px;
     @media only screen
     and (min-device-width: 375px)

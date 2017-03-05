@@ -26,6 +26,7 @@ class SeLogerApi
 
   def next_pages_search(qs, max_pages)
     current_page = 1
+    houses = []
     while current_page < max_pages.to_i
       current_page += 1
       resp = client.get("search.xml", qs.merge(SEARCHpg: current_page))

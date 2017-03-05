@@ -1,17 +1,16 @@
 # House model
 class House < ApplicationRecord
-  def self.from_se_loger(h)
-    new(
-      external_id: h["idAnnonce"].to_s,
-      postal_code: h["cp"],
-      price:       h["prix"],
-      permalink:   h["permaLien"],
-      title:       h["titre"],
-      description: h["descriptif"],
-      created_at:  h["dtCreation"],
-      updated_at:  h["dtFraicheur"],
-      payload:     h
-    )
+  def self.find_or_update_from_se_loger(h)
+    house = find_or_initialize_by(external_id: h["idAnnonce"].to_s)
+    house.postal_code = h["cp"]
+    house.price       = h["prix"]
+    house.permalink   = h["permaLien"]
+    house.title       = h["titre"]
+    house.description = h["descriptif"]
+    house.created_at  = h["dtCreation"]
+    house.updated_at  = h["dtFraicheur"]
+    house.payload     = h
+    house.save
   end
 
   def thumb

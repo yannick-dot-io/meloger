@@ -4,10 +4,6 @@ class SeLogerApi
     new.search(opts)
   end
 
-  def self.get(id)
-    new.get(id)
-  end
-
   def search(opts = {})
     qs = { naturebien: 1 }
     qs[:cp] = opts.fetch(:postal_code)
@@ -35,16 +31,10 @@ class SeLogerApi
         houses += resp.body["recherche"]["annonces"]["annonce"]
       end
     end
-    houses = houses.map { |h| House.from_se_loger(h) }
     return houses unless opts[:terms].any?
     houses.select do |h|
-      opts[:terms].any? { |term| h.description.include?(term) }
+      opts[:terms].any? { |term| h["descriptif"].include?(term) }
     end
-  end
-
-  def get(id)
-    resp = client.get("annonceDetail.xml", idAnnonce: id)
-    House.from_se_loger(resp.body["detailAnnonce"])
   end
 
   def client

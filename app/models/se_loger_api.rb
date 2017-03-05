@@ -1,3 +1,4 @@
+# API client for se loger
 class SeLogerApi
   def self.search(opts = {})
     new.search(opts)
@@ -20,9 +21,9 @@ class SeLogerApi
     end
 
     qs[:tri] = case opts[:order]
-    when :asc; :a_dt_crea
-    else :d_dt_crea
-    end
+               when :asc then :a_dt_crea
+               else :d_dt_crea
+               end
 
     resp = client.get("search.xml", qs)
     houses = resp.body["recherche"]["annonces"]["annonce"]

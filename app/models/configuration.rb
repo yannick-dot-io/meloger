@@ -1,3 +1,4 @@
+# Configuration for defaults in the app
 module Configuration
   def self.max_price
     300_000

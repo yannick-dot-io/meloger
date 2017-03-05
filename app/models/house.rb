@@ -1,3 +1,4 @@
+# House model
 class House < ApplicationRecord
   def self.from_se_loger(h)
     new(
@@ -14,7 +15,7 @@ class House < ApplicationRecord
   def thumb
     return "" unless payload
     return payload["firstThumb"] unless payload["photos"]
-    if payload["nbPhotos"].to_i > 0
+    if payload["nbPhotos"].to_i.positive?
       p = payload["photos"]
       s = p["photo"]
       first = s[0]

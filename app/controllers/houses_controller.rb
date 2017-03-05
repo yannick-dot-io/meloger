@@ -1,7 +1,7 @@
 # Houses
 class HousesController < ApplicationController
   def index
-    @houses = House.all
+    @houses = House.all.sort(:updated_at)
   end
 
   def show

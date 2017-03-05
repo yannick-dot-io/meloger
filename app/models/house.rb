@@ -8,6 +8,8 @@ class House < ApplicationRecord
       permalink:   h["permaLien"],
       title:       h["titre"],
       description: h["descriptif"],
+      created_at:  h["dtCreation"],
+      updated_at:  h["dtFraicheur"],
       payload:     h
     )
   end

@@ -1,13 +1,13 @@
 <div class="card-wrapper">
   <div class="card">
     <div class="card-image">
-      <%= link_to house_path(house) do %>
+      <%= link_to house_path(id: house.external_id) do %>
         <img src="<%= house.thumb %>">
       <% end %>
     </div>
     <div class="card-header">
       <span>
-        <%= link_to house_path(house) do %>
+        <%= link_to house_path(id: house.external_id) do %>
           <%= house.place %>
         <% end %>
       </span>

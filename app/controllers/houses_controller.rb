@@ -6,8 +6,6 @@ class HousesController < ApplicationController
 
   def show
     id = params[:id]
-    @house = House.find(id)
-  rescue ActiveRecord::RecordNotFound
     @house = House.find_by(external_id: id)
   end
 end

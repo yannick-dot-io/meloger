@@ -15,11 +15,11 @@ class House < ApplicationRecord
 
   def thumb
     return "" unless payload
-    return payload["firstThumb"] unless payload["photos"]
+    return no_protocol(payload["firstThumb"]) unless payload["photos"]
     if payload["nbPhotos"].to_i.positive?
       first_picture_as_thumb
     else
-      payload["firstThumb"]
+      no_protocol(payload["firstThumb"])
     end
   end
 
@@ -28,9 +28,9 @@ class House < ApplicationRecord
     s = p["photo"]
     first = s[0]
     if first
-      first["stdUrl"]
+      no_protocol(first["stdUrl"])
     else
-      payload["firstThumb"]
+      no_protocol(payload["firstThumb"])
     end
   end
 
@@ -64,5 +64,11 @@ class House < ApplicationRecord
 
   def number_of_rooms
     payload.fetch("nbPiece", "Unknown")
+  end
+
+  private
+
+  def no_protocol(url)
+    url.sub(/http(s)?:/, "")
   end
 end

@@ -1,10 +1,14 @@
 # Houses
 class HousesController < ApplicationController
+
+  def index
+    @houses = House.all
+  end
+
   def show
     id = params[:id]
-    @house = SeLogerApi.get(id)
-    # @house = Rails.cache.fetch("house-#{id}", expires_in: 10.minutes) do
-    #   SeLogerApi.get(id)
-    # end
+    @house = House.find(id)
+  rescue ActiveRecord::RecordNotFound
+    @house = House.find_by(external_id: id)
   end
 end

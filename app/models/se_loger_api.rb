@@ -5,6 +5,36 @@ class SeLogerApi
   end
 
   def search(opts = {})
+    qs = setup_options(opts)
+
+    houses = _search(qs)
+    return houses unless opts[:terms].any?
+    houses.select do |h|
+      opts[:terms].any? { |term| h["descriptif"].include?(term) }
+    end
+  end
+
+  private
+
+  def _search(qs = {})
+    resp = client.get("search.xml", qs)
+    houses = resp.body["recherche"]["annonces"]["annonce"]
+    max_pages = resp.body["recherche"]["pageMax"]
+    return houses unless max_pages
+    houses + next_pages_search(qs, max_pages)
+  end
+
+  def next_pages_search(qs, max_pages)
+    current_page = 1
+    while current_page < max_pages.to_i
+      current_page += 1
+      resp = client.get("search.xml", qs.merge(SEARCHpg: current_page))
+      houses += resp.body["recherche"]["annonces"]["annonce"]
+    end
+    houses
+  end
+
+  def setup_options(opts = {})
     qs = { naturebien: 1 }
     qs[:cp] = opts.fetch(:postal_code)
     qs[:idtypebien] = opts[:appartment] ? 1 : 2
@@ -20,21 +50,7 @@ class SeLogerApi
                when :asc then :a_dt_crea
                else :d_dt_crea
                end
-
-    resp = client.get("search.xml", qs)
-    houses = resp.body["recherche"]["annonces"]["annonce"]
-    if resp.body["recherche"]["pageMax"]
-      current_page = resp.body["recherche"]["pageCourante"].to_i
-      while current_page < resp.body["recherche"]["pageMax"].to_i
-        current_page += 1
-        resp = client.get("search.xml", qs.merge(SEARCHpg: current_page))
-        houses += resp.body["recherche"]["annonces"]["annonce"]
-      end
-    end
-    return houses unless opts[:terms].any?
-    houses.select do |h|
-      opts[:terms].any? { |term| h["descriptif"].include?(term) }
-    end
+    qs
   end
 
   def client

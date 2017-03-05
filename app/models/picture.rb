@@ -1,3 +1,4 @@
+# Wrapper for a picture
 class Picture
   attr_accessor :payload
 

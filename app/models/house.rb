@@ -17,14 +17,18 @@ class House < ApplicationRecord
     return "" unless payload
     return payload["firstThumb"] unless payload["photos"]
     if payload["nbPhotos"].to_i.positive?
-      p = payload["photos"]
-      s = p["photo"]
-      first = s[0]
-      if first
-        first["stdUrl"]
-      else
-        payload["firstThumb"]
-      end
+      first_picture_as_thumb
+    else
+      payload["firstThumb"]
+    end
+  end
+
+  def first_picture_as_thumb
+    p = payload["photos"]
+    s = p["photo"]
+    first = s[0]
+    if first
+      first["stdUrl"]
     else
       payload["firstThumb"]
     end

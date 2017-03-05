@@ -24,4 +24,3 @@ $(document).on('turbolinks:load', function() {
     dots: true
   });
 });
-// $(document).on('turbolinks:before-cache', $('.card-images').slick('unslick'))

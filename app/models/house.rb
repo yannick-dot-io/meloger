@@ -30,7 +30,7 @@ class House < ApplicationRecord
   end
 
   def pictures
-    payload["photos"]["photo"]
+    payload["photos"]["photo"].map { |p| Picture.new(p) }
   end
 
   def place

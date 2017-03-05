@@ -10,7 +10,7 @@
     <div class="card-images">
       <% @house.pictures.each do |picture| %>
         <div>
-          <img data-lazy="<%= picture["bigUrl"] %>" />
+          <img data-lazy="<%= picture.url %>" />
         </div>
       <% end %>
     </div>

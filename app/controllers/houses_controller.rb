@@ -1,7 +1,7 @@
 # Houses
 class HousesController < ApplicationController
   def index
-    @houses = House.all.order(:updated_at)
+    @houses = House.all.order(updated_at: :desc)
   end
 
   def show

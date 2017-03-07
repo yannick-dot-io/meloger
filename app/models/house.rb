@@ -69,6 +69,7 @@ class House < ApplicationRecord
   private
 
   def no_protocol(url)
+    return unless url
     url.sub(/http(s)?:/, "")
   end
 end

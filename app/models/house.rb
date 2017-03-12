@@ -1,5 +1,7 @@
 # House model
 class House < ApplicationRecord
+  validates :external_id, uniqueness: true
+
   def self.find_or_update_from_se_loger(h)
     house = find_or_initialize_by(external_id: h["idAnnonce"].to_s)
     house.postal_code = h["cp"]

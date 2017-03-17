@@ -17,4 +17,8 @@ module Configuration
   def self.default_regions
     ENV.fetch("REGIONS", "10,21,51,58,71,89")
   end
+
+  def self.pap_regions
+    [373, 385, 415, 422, 435, 453]
+  end
 end

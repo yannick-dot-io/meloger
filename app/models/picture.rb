@@ -7,7 +7,7 @@ class Picture
   end
 
   def url
-    no_protocol(payload["bigUrl"] || payload["stdUrl"] || payload["thbUrl"])
+    no_protocol(payload["bigUrl"] || payload["stdUrl"] || payload["thbUrl"] || payload["_links"]["self"]["href"])
   end
 
   private

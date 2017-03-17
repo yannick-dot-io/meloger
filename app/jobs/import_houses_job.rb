@@ -1,13 +1,25 @@
 # Replace records with new ones for houses
 class ImportHousesJob < ApplicationJob
   def perform(_args = {})
-    houses = houses_hash.map do |h|
-      House.find_or_update_from_se_loger(h)
-    end
-    House.where.not(external_id: houses.map(&:external_id)).delete_all
+    se_loger_import
+    pap_import
   end
 
-  def houses_hash
+  def pap_import
+    houses = PapApi.default_search.map do |h|
+      House.find_or_update_from_pap(h)
+    end
+    House.where(source: "pap").where.not(external_id: houses.map(&:external_id)).delete_all
+  end
+
+  def se_loger_import
+    houses = se_loger_houses_hash.map do |h|
+      House.find_or_update_from_se_loger(h)
+    end
+    House.where(source: "se_loger").where.not(external_id: houses.map(&:external_id)).delete_all
+  end
+
+  def se_loger_houses_hash
     SeLogerApi.search(postal_code: ::Configuration.default_regions,
                       max_price: ::Configuration.max_price,
                       min_price: ::Configuration.min_price,

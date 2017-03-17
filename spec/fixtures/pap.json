@@ -1,0 +1,142 @@
+{
+  "id": 413002207,
+  "produit": "vente",
+  "typebien": "maison",
+  "prix": 170000,
+  "surface": 160,
+  "nb_pieces": 7,
+  "nb_chambres_max": 3,
+  "nb_photos": 10,
+  "marker": {
+    "lat": 48.514384675434,
+    "lng": 3.5963787847629
+  },
+  "date_classement": 1473695342,
+  "classe_energie": null,
+  "texte": "Pont-sur-Seine. Centre bourg. Commerces - écoles - 10 mn gares Romilly-sur-Seine/Nogent-sur-Seine (axe Troyes-Paris gare de l'Est).\n Propriété type longère - exposition plein sud - énorme potentiel - idéal pour activités artisanales/projet appartements/chambres d'hôtes/salle de réception/séminaires...\n Tout à l'égout - gaz de ville - chauffage central fuel. \n DPE E indice 320 - GES G indice 80 - Habitable de suite. \n Prévoir travaux.\n Habitation principale 160 m² : Cuisine équipée - salon cheminée ouverte - salle de bains baignoire/douche - séjour cheminée ouverte - 3 grandes chambres dont une avec salle d'eau/dressing - lingerie/dressing - bureau - 2 wc - cave voûtée, sous-sol avec chaufferie sous partie maison - \n grenier aménageable. \n Dépendances 250 m² : Garage 3 voitures - atelier avec fosse - accès sur une place - cuisine d'été avec salle attenante, cheminée ouverte - grenier aménageable sur l'ensemble. \n Le tout sur terrain arboré de 1.728 m² - clos par mur en pierres avec abri jardin fermé et wc.\n Pas d'agence. pas d'horaires précis",
+  "texte_accroche": null,
+  "telephones": [
+    "06.77.76.65.34",
+    "06.85.93.02.68"
+  ],
+  "has_email": true,
+  "adtech": {
+    "android": {
+      "bottom": "pap_app_mob_android_detail_vente-bottom-5"
+    },
+    "ios": {
+      "bottom": "pap_app_mob_ios_detail_vente-bottom-5"
+    },
+    "kvstring": "typebien=maison;departement=10;ville=pont-sur-seine-10400;nb_pieces=7;nb_chambres=3;prix=170000;surface=160;surface_terrain=1728"
+  },
+  "_links": {
+    "self": {
+      "href": "http://ws.pap.fr/immobilier/annonces/413002207"
+    },
+    "desktop": {
+      "href": "http://www.pap.fr/annonces/-r413002207"
+    },
+    "desktop_canonical": {
+      "href": "http://www.pap.fr/annonces/-r413002207"
+    }
+  },
+  "_embedded": {
+    "place": [
+      {
+        "id": 10389,
+        "slug": "pont-sur-seine-10400",
+        "title": "Pont-sur-Seine (10400)",
+        "lat": 48.517799,
+        "lng": 3.59693,
+        "is_idf": false,
+        "_links": {
+          "self": {
+            "href": "http://ws.pap.fr/gis/places/10389"
+          }
+        }
+      }
+    ],
+    "photo": [
+      {
+        "ordre": 1,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30A2207.jpg"
+          }
+        }
+      },
+      {
+        "ordre": 2,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30B2207.jpg"
+          }
+        }
+      },
+      {
+        "ordre": 3,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30C2207.jpg"
+          }
+        }
+      },
+      {
+        "ordre": 4,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30D2207.jpg"
+          }
+        }
+      },
+      {
+        "ordre": 5,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30E2207.jpg"
+          }
+        }
+      },
+      {
+        "ordre": 6,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30F2207.jpg"
+          }
+        }
+      },
+      {
+        "ordre": 7,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30G2207.jpg"
+          }
+        }
+      },
+      {
+        "ordre": 8,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30H2207.jpg"
+          }
+        }
+      },
+      {
+        "ordre": 9,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30I2207.jpg"
+          }
+        }
+      },
+      {
+        "ordre": 10,
+        "_links": {
+          "self": {
+            "href": "http://static.pap.fr/photos/B30/B30J2207.jpg"
+          }
+        }
+      }
+    ]
+  }
+}

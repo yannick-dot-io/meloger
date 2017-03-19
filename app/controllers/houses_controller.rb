@@ -7,5 +7,6 @@ class HousesController < ApplicationController
   def show
     id = params[:id]
     @house = House.find_by(external_id: id)
+    raise ActiveRecord::NotFound unless @house
   end
 end

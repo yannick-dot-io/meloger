@@ -63,8 +63,16 @@ class House < ApplicationRecord
 
   def pictures
     case source
-    when "se_loger" then payload["photos"]["photo"].map { |p| Picture.new(p) }
+    when "se_loger" then se_loger_pictures
     when "pap" then payload["_embedded"]["photo"].map { |p| Picture.new(p) }
+    end
+  end
+
+  def se_loger_pictures
+    if payload["nbPhotos"].to_i == 1
+      [payload["photos"]["photo"]].map { |p| Picture.new(p) }
+    else
+      payload["photos"]["photo"].map { |p| Picture.new(p) }
     end
   end
 

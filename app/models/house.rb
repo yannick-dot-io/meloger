@@ -4,28 +4,37 @@ class House < ApplicationRecord
 
   def self.find_or_update_from_se_loger(h)
     house = find_or_initialize_by(external_id: h["idAnnonce"].to_s)
-    house.source      = "se_loger"
-    house.postal_code = h["cp"]
-    house.price       = h["prix"] || 0
-    house.permalink   = h["permaLien"]
-    house.title       = h["titre"]
-    house.description = h["descriptif"]
-    house.payload     = h
+    house.attributes_from_se_loger(h)
     house.save!
     house
   end
 
   def self.find_or_update_from_pap(h)
     house = find_or_initialize_by(external_id: h["id"].to_s)
-    house.source      = "pap"
-    house.postal_code = h["_embedded"]["place"][0]["slug"].split("-").last
-    house.price       = h["prix"] || 0
-    house.permalink   = h["_links"]["desktop"]["href"]
-    house.title       = h["_embedded"]["place"][0]["title"]
-    house.description = h["texte"]
-    house.payload     = h
+    house.attributes_from_pap(h)
     house.save!
     house
+  end
+
+  def attributes_from_se_loger(h)
+    self.source      = "se_loger"
+    self.postal_code = h["cp"]
+    self.price       = h["prix"] || 0
+    self.permalink   = h["permaLien"]
+    self.title       = h["titre"]
+    self.description = h["descriptif"]
+    self.payload     = h
+  end
+
+  def attributes_from_pap(h)
+    self.source      = "pap"
+    place            = h["_embedded"]["place"][0]
+    self.postal_code = place["slug"].split("-").last
+    self.price       = h.fetch("prix", 0)
+    self.permalink   = h["_links"]["desktop"]["href"]
+    self.title       = place["title"]
+    self.description = h["texte"]
+    self.payload     = h
   end
 
   def thumb
@@ -37,8 +46,9 @@ class House < ApplicationRecord
   end
 
   def pap_thumb
-    return "" unless payload["_embedded"]["photo"] && payload["_embedded"]["photo"].any?
-    no_protocol(payload["_embedded"]["photo"][0]["_links"]["self"]["href"])
+    pics = payload.fetch("_embedded", {})["photo"]
+    return "" unless pics && pics.any?
+    no_protocol(pics[0]["_links"]["self"]["href"])
   end
 
   def se_loger_thumb

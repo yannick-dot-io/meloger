@@ -1,3 +1,4 @@
+# Pap API client
 class PapApi
   def self.default_search
     new.search(postal_code: ::Configuration.pap_regions,
@@ -30,7 +31,7 @@ class PapApi
   end
 
   def setup_options(opts = {})
-    recherche = { geo: {}, prix: {},  produit: "vente" }
+    recherche = { geo: {}, prix: {}, produit: "vente" }
     recherche[:geo][:ids] = opts.fetch(:postal_code)
     recherche[:typesbien] = opts[:appartment] ? %w{appartment} : %w{maison}
     if opts[:max_price]

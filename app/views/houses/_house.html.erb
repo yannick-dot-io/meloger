@@ -8,7 +8,7 @@
     <div class="card-header">
       <span>
         <%= link_to house_path(id: house.external_id) do %>
-          <%= house.place %>
+          <%= house.place %> <small>(<%= house.reference %>)</small>
         <% end %>
       </span>
       <span>

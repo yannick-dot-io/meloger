@@ -16,6 +16,10 @@ class SeLogerHouse < House
     self.payload     = h
   end
 
+  def reference
+    "se loger"
+  end
+
   def thumb
     return "" unless payload
     return no_protocol(payload["firstThumb"]) unless payload["photos"]

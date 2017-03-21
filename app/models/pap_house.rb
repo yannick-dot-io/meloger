@@ -17,6 +17,10 @@ class PapHouse < House
     self.payload     = h
   end
 
+  def reference
+    "pap"
+  end
+
   def thumb
     return "" unless payload
     pics = payload.fetch("_embedded", {})["photo"]

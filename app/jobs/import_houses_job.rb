@@ -10,6 +10,8 @@ class ImportHousesJob < ApplicationJob
       PapHouse.find_or_update(h)
     end
     House.where(source: "pap").where.not(external_id: houses.map(&:external_id)).delete_all
+  rescue StandardError => e
+    Raven.capture_exception(e)
   end
 
   def se_loger_import
@@ -17,6 +19,8 @@ class ImportHousesJob < ApplicationJob
       SeLogerHouse.find_or_update(h)
     end
     House.where(source: "se_loger").where.not(external_id: houses.map(&:external_id)).delete_all
+  rescue StandardError => e
+    Raven.capture_exception(e)
   end
 
   def se_loger_houses_hash

@@ -1,11 +1,11 @@
 # Configuration for defaults in the app
 module Configuration
   def self.max_price
-    250_000
+    300_000
   end
 
   def self.min_price
-    100_000
+    150_000
   end
 
   def self.search_terms

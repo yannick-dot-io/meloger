@@ -19,6 +19,6 @@ module Configuration
   end
 
   def self.pap_regions
-    [373, 385, 415, 422, 435, 453]
+    [373, 385, 415, 422, 435, 453, 465]
   end
 end
